@@ -4,14 +4,14 @@ class SaleOrderLine(models.Model):
     _inherit = 'sale.order.line'
 
     bom_component_ids = fields.Many2many(
-        'mrp.bom.line',
-        string="BoM Components",
-        compute='_compute_bom_lines',
-        store=False,
+    'mrp.bom.line',
+    string="BoM Lines",        # ← "BoM Components" se badla
+    compute='_compute_bom_lines',
+    store=False,
     )
 
     bom_components_text = fields.Char(
-        string="BoM Components",
+        string="BoM Summary",      # ← "BoM Components" se badla
         compute='_compute_bom_components_text',
         store=False,
     )
