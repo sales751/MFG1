@@ -6,10 +6,12 @@
         <field name="arch" type="xml">
 
             <!-- Tree view mein BOM column add karo -->
-            <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom_qty']" position="after">
+            <!-- <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom_qty']" position="after">
                 <field name="bom_components_text" string="BoM Components" optional="show"/>
+            </xpath> -->
+            <xpath expr="//field[@name='order_line']/tree" position="inside">
+                <field name="bom_components_text" string="BoM Components"/>
             </xpath>
-
             <!-- Form popup mein detailed table bhi raho -->
             <xpath expr="//field[@name='order_line']/form//field[@name='name']" position="after">
                 <group string="BoM Components" col="1">
