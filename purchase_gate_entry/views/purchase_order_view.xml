@@ -1,0 +1,27 @@
+<odoo>
+  <record id="view_purchase_order_form_gate_entry" model="ir.ui.view">
+    <field name="name">purchase.order.form.gate.entry</field>
+    <field name="model">purchase.order</field>
+    <field name="inherit_id" ref="purchase.purchase_order_form"/>
+    <field name="arch" type="xml">
+
+      <xpath expr="//notebook" position="inside">
+        <page string="Gate Entry" name="gate_entry">
+          <group>
+            <group>
+              <field name="vehicle_number"/>
+              <field name="driver_name"/>
+              <field name="iso_verified"/>
+            </group>
+            <group>
+              <field name="gate_entry_time"/>
+              <field name="driver_license" widget="binary"/>
+              <field name="vehicle_puc" widget="binary"/>
+            </group>
+          </group>
+        </page>
+      </xpath>
+
+    </field>
+  </record>
+</odoo>
