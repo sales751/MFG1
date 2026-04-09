@@ -90,7 +90,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">719</field>
         <field name="uom_id" ref="uom.product_uom_meter"/>
-        <field name="uom_po_id" ref="uom.product_uom_meter"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 719,
@@ -107,7 +106,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">469</field>
         <field name="uom_id" ref="uom.product_uom_meter"/>
-        <field name="uom_po_id" ref="uom.product_uom_meter"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 469,
@@ -124,7 +122,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">117</field>
         <field name="uom_id" ref="uom.product_uom_meter"/>
-        <field name="uom_po_id" ref="uom.product_uom_meter"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 117,
@@ -141,7 +138,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">984</field>
         <field name="uom_id" ref="uom.product_uom_meter"/>
-        <field name="uom_po_id" ref="uom.product_uom_meter"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 984,
@@ -158,7 +154,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">1531</field>
         <field name="uom_id" ref="uom.product_uom_meter"/>
-        <field name="uom_po_id" ref="uom.product_uom_meter"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 1531,
@@ -180,7 +175,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">347</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 347,
@@ -197,7 +191,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">266</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 266,
@@ -214,7 +207,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">385</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 385,
@@ -231,7 +223,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">44</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 44,
@@ -248,7 +239,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">60</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 60,
@@ -265,7 +255,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">452</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 452,
@@ -282,7 +271,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">719</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 719,
@@ -299,7 +287,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">323</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 323,
@@ -316,7 +303,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">408</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 408,
@@ -333,7 +319,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">408</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 408,
@@ -350,7 +335,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">719</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 719,
@@ -367,7 +351,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">651</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 651,
@@ -389,7 +372,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">380</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 380,
@@ -406,7 +388,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">380</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 380,
@@ -423,7 +404,6 @@
         <field name="list_price">0</field>
         <field name="standard_price">420</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
         <field name="seller_ids" eval="[(0, 0, {
             'name': ref('vendor_gates_hss'),
             'price': 420,
@@ -445,7 +425,6 @@
         <field name="list_price">3444</field>
         <field name="standard_price">2296</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
     </record>
 
     <!-- 07-380 - HOSE 1" R2 ST M42X2 XST M42X2 1700MM Spring -->
@@ -457,7 +436,6 @@
         <field name="list_price">2564</field>
         <field name="standard_price">1709</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
     </record>
 
     <!-- 07-280 - HOSE 1" 4SH ST M42X2 ST M42X2 1400MM Spring -->
@@ -469,7 +447,6 @@
         <field name="list_price">3121</field>
         <field name="standard_price">2081</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
     </record>
 
     <!-- 07-133 - HOSE 1" R2 ST M42X2 ST M42X2 1400MM Spring -->
@@ -481,7 +458,6 @@
         <field name="list_price">2353</field>
         <field name="standard_price">1569</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
     </record>
 
     <!-- 07-1596 - HOSE 1" R2 90 M42X2 ST M42X2 750MM -->
@@ -493,10 +469,9 @@
         <field name="list_price">1610</field>
         <field name="standard_price">1073</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
     </record>
 
-    <!-- 07-216 - HOSE 1/4" R1 90XST 1/4" BSP 1000MM (Qty 2 in kit) -->
+    <!-- 07-216 - HOSE 1/4" R1 90XST 1/4" BSP 1000MM -->
     <record id="product_07_216" model="product.product">
         <field name="name">07-216</field>
         <field name="default_code">07-216</field>
@@ -505,7 +480,6 @@
         <field name="list_price">401</field>
         <field name="standard_price">221</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
     </record>
 
     <!-- 07-205 - HOSE 1/4" R1 90XST 1/4" BSP 2000MM -->
@@ -517,7 +491,6 @@
         <field name="list_price">548</field>
         <field name="standard_price">338</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
     </record>
 
     <!-- 07-814 - HOSE 1/4" R2 90 1/4" ST 1/4" 3000MM -->
@@ -529,7 +502,6 @@
         <field name="list_price">777</field>
         <field name="standard_price">518</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
     </record>
 
     <!-- 07-999 - HOSE 1" 4SH 90 M42X2 ST M42X2 700MM -->
@@ -541,7 +513,6 @@
         <field name="list_price">1300</field>
         <field name="standard_price">1000</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
     </record>
 
 
@@ -558,7 +529,6 @@
         <field name="list_price">15219</field>
         <field name="standard_price">0</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="uom_po_id" ref="uom.product_uom_unit"/>
     </record>
 
 </odoo>
