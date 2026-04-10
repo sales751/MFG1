@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- =========================================================== -->
+    <!-- BOMs for EC210 HOSES (8 BOMs)                               -->
+    <!-- =========================================================== -->
+
+    <!-- 1. BOM for 07-011 Hose -->
+    <record id="bom_07_011" model="mrp.bom">
+        <field name="product_tmpl_id" ref="product_07_011"/>
+        <field name="product_qty">1</field>
+        <field name="type">normal</field>
+        <field name="bom_line_ids" eval="[
+            (0, 0, {'product_id': ref('product_80_510'), 'product_qty': 1.7, 'product_uom_id': ref('uom.product_uom_meter')}),
+            (0, 0, {'product_id': ref('product_40_757'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_40_757'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_90_530'), 'product_qty': 1})
+        ]"/>
+    </record>
+
+    <!-- 2. BOM for 07-380 Hose -->
+    <record id="bom_07_380" model="mrp.bom">
+        <field name="product_tmpl_id" ref="product_07_380"/>
+        <field name="product_qty">1</field>
+        <field name="type">normal</field>
+        <field name="bom_line_ids" eval="[
+            (0, 0, {'product_id': ref('product_70_556'), 'product_qty': 1.7, 'product_uom_id': ref('uom.product_uom_meter')}),
+            (0, 0, {'product_id': ref('product_40_647'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_40_647'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_90_530'), 'product_qty': 1})
+        ]"/>
+    </record>
+
+    <!-- 3. BOM for 07-280 Hose -->
+    <record id="bom_07_280" model="mrp.bom">
+        <field name="product_tmpl_id" ref="product_07_280"/>
+        <field name="product_qty">1</field>
+        <field name="type">normal</field>
+        <field name="bom_line_ids" eval="[
+            (0, 0, {'product_id': ref('product_80_510'), 'product_qty': 1.4, 'product_uom_id': ref('uom.product_uom_meter')}),
+            (0, 0, {'product_id': ref('product_40_757'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_40_757'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_90_506'), 'product_qty': 1})
+        ]"/>
+    </record>
+
+    <!-- 4. BOM for 07-133 Hose -->
+    <record id="bom_07_133" model="mrp.bom">
+        <field name="product_tmpl_id" ref="product_07_133"/>
+        <field name="product_qty">1</field>
+        <field name="type">normal</field>
+        <field name="bom_line_ids" eval="[
+            (0, 0, {'product_id': ref('product_70_556'), 'product_qty': 1.4, 'product_uom_id': ref('uom.product_uom_meter')}),
+            (0, 0, {'product_id': ref('product_40_647'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_40_647'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_90_506'), 'product_qty': 1})
+        ]"/>
+    </record>
+
+    <!-- 5. BOM for 07-1596 Hose (No Spring) -->
+    <record id="bom_07_1596" model="mrp.bom">
+        <field name="product_tmpl_id" ref="product_07_1596"/>
+        <field name="product_qty">1</field>
+        <field name="type">normal</field>
+        <field name="bom_line_ids" eval="[
+            (0, 0, {'product_id': ref('product_70_556'), 'product_qty': 0.9, 'product_uom_id': ref('uom.product_uom_meter')}),
+            (0, 0, {'product_id': ref('product_40_649'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_40_647'), 'product_qty': 1})
+        ]"/>
+    </record>
+
+    <!-- 6. BOM for 07-216 Hose (No Spring) -->
+    <record id="bom_07_216" model="mrp.bom">
+        <field name="product_tmpl_id" ref="product_07_216"/>
+        <field name="product_qty">1</field>
+        <field name="type">normal</field>
+        <field name="bom_line_ids" eval="[
+            (0, 0, {'product_id': ref('product_70_551'), 'product_qty': 1.0, 'product_uom_id': ref('uom.product_uom_meter')}),
+            (0, 0, {'product_id': ref('product_10_507'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_10_505'), 'product_qty': 1})
+        ]"/>
+    </record>
+
+    <!-- 7. BOM for 07-205 Hose (No Spring) -->
+    <record id="bom_07_205" model="mrp.bom">
+        <field name="product_tmpl_id" ref="product_07_205"/>
+        <field name="product_qty">1</field>
+        <field name="type">normal</field>
+        <field name="bom_line_ids" eval="[
+            (0, 0, {'product_id': ref('product_70_551'), 'product_qty': 2.0, 'product_uom_id': ref('uom.product_uom_meter')}),
+            (0, 0, {'product_id': ref('product_10_507'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_10_505'), 'product_qty': 1})
+        ]"/>
+    </record>
+
+    <!-- 8. BOM for 07-814 Hose (No Spring) -->
+    <record id="bom_07_814" model="mrp.bom">
+        <field name="product_tmpl_id" ref="product_07_814"/>
+        <field name="product_qty">1</field>
+        <field name="type">normal</field>
+        <field name="bom_line_ids" eval="[
+            (0, 0, {'product_id': ref('product_70_551'), 'product_qty': 3.0, 'product_uom_id': ref('uom.product_uom_meter')}),
+            (0, 0, {'product_id': ref('product_10_507'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_10_505'), 'product_qty': 1})
+        ]"/>
+    </record>
+
+
+    <!-- =========================================================== -->
+    <!-- BOM for EC210 KIT (07-923A) - 1 BOM                         -->
+    <!-- =========================================================== -->
+
+    <record id="bom_07_923A" model="mrp.bom">
+        <field name="product_tmpl_id" ref="product_07_923A"/>
+        <field name="product_qty">1</field>
+        <field name="type">normal</field>
+        <field name="bom_line_ids" eval="[
+            (0, 0, {'product_id': ref('product_07_011'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_07_380'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_07_280'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_07_133'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_07_1596'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_07_216'), 'product_qty': 2}),
+            (0, 0, {'product_id': ref('product_07_205'), 'product_qty': 1}),
+            (0, 0, {'product_id': ref('product_07_814'), 'product_qty': 1})
+        ]"/>
+    </record>
+
+</odoo>
