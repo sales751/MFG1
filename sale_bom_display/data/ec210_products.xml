@@ -2,64 +2,46 @@
 <odoo>
 
     <!-- =========================================================== -->
-    <!-- CATEGORIES - Pehle Categories Create Karo                   -->
+    <!-- CATEGORIES                                                  -->
     <!-- =========================================================== -->
 
-    <!-- Raw Materials Category -->
     <record id="cat_raw_materials" model="product.category">
         <field name="name">Raw Materials</field>
-        <field name="property_cost_method">standard</field>
-        <field name="property_valuation">real_time</field>
     </record>
 
-    <!-- Hose Pipes Sub-Category -->
     <record id="cat_hose_pipes" model="product.category">
         <field name="name">Hose Pipes</field>
         <field name="parent_id" ref="cat_raw_materials"/>
-        <field name="property_cost_method">standard</field>
     </record>
 
-    <!-- Fittings Sub-Category -->
     <record id="cat_fittings" model="product.category">
         <field name="name">Fittings</field>
         <field name="parent_id" ref="cat_raw_materials"/>
-        <field name="property_cost_method">standard</field>
     </record>
 
-    <!-- Springs Sub-Category -->
     <record id="cat_springs" model="product.category">
         <field name="name">Springs</field>
         <field name="parent_id" ref="cat_raw_materials"/>
-        <field name="property_cost_method">standard</field>
     </record>
 
-    <!-- Semi Finished Category -->
     <record id="cat_semi_finished" model="product.category">
         <field name="name">Semi Finished</field>
-        <field name="property_cost_method">standard</field>
-        <field name="property_valuation">real_time</field>
     </record>
 
-    <!-- Individual Hoses Sub-Category -->
     <record id="cat_individual_hoses" model="product.category">
         <field name="name">Individual Hoses</field>
         <field name="parent_id" ref="cat_semi_finished"/>
     </record>
 
-    <!-- EC210 Hoses Sub-Category -->
     <record id="cat_ec210_hoses" model="product.category">
         <field name="name">EC210 Hoses</field>
         <field name="parent_id" ref="cat_individual_hoses"/>
     </record>
 
-    <!-- Finished Goods Category -->
     <record id="cat_finished_goods" model="product.category">
         <field name="name">Finished Goods</field>
-        <field name="property_cost_method">standard</field>
-        <field name="property_valuation">real_time</field>
     </record>
 
-    <!-- Kits Sub-Category -->
     <record id="cat_kits" model="product.category">
         <field name="name">Kits</field>
         <field name="parent_id" ref="cat_finished_goods"/>
@@ -67,7 +49,7 @@
 
 
     <!-- =========================================================== -->
-    <!-- VENDOR / SUPPLIER                                           -->
+    <!-- VENDOR                                                      -->
     <!-- =========================================================== -->
 
     <record id="vendor_gates_hss" model="res.partner">
@@ -78,437 +60,299 @@
 
 
     <!-- =========================================================== -->
-    <!-- RAW MATERIALS - HOSE PIPES (5 Products)                     -->
+    <!-- HOSE PIPES (5) - NO 'type' FIELD                           -->
     <!-- =========================================================== -->
 
-    <!-- 80-510 - 1" 4SP 16 MXG4K -->
     <record id="product_80_510" model="product.product">
         <field name="name">80-510</field>
         <field name="default_code">80-510</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_hose_pipes"/>
         <field name="list_price">0</field>
         <field name="standard_price">719</field>
         <field name="uom_id" ref="uom.product_uom_meter"/>
-        <field name="seller_ids" eval="[(0, 0, {
-        'partner_id': ref('vendor_gates_hss'),  
-        'price': 719,
-        'min_qty': 0,
-    })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 719, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 70-556 - 1" R2 16 Proflex -->
     <record id="product_70_556" model="product.product">
         <field name="name">70-556</field>
         <field name="default_code">70-556</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_hose_pipes"/>
         <field name="list_price">0</field>
         <field name="standard_price">469</field>
         <field name="uom_id" ref="uom.product_uom_meter"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 469,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 469, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 70-551 - 1/4" R2 4 Proflex -->
     <record id="product_70_551" model="product.product">
         <field name="name">70-551</field>
         <field name="default_code">70-551</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_hose_pipes"/>
         <field name="list_price">0</field>
         <field name="standard_price">117</field>
         <field name="uom_id" ref="uom.product_uom_meter"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 117,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 117, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 80-518 - 1" 4SH 16 4XH -->
     <record id="product_80_518" model="product.product">
         <field name="name">80-518</field>
         <field name="default_code">80-518</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_hose_pipes"/>
         <field name="list_price">0</field>
         <field name="standard_price">984</field>
         <field name="uom_id" ref="uom.product_uom_meter"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 984,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 984, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 80-521 - 1.1/4" 4SH 20 4XH -->
     <record id="product_80_521" model="product.product">
         <field name="name">80-521</field>
         <field name="default_code">80-521</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_hose_pipes"/>
         <field name="list_price">0</field>
         <field name="standard_price">1531</field>
         <field name="uom_id" ref="uom.product_uom_meter"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 1531,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 1531, 'min_qty': 0})]"/>
     </record>
 
 
     <!-- =========================================================== -->
-    <!-- RAW MATERIALS - FITTINGS (12 Products)                      -->
+    <!-- FITTINGS (12) - NO 'type' FIELD                             -->
     <!-- =========================================================== -->
 
-    <!-- 40-757 - BF 4SH 1" ST M42X2 DIN -->
     <record id="product_40_757" model="product.product">
         <field name="name">40-757</field>
         <field name="default_code">40-757</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_fittings"/>
         <field name="list_price">0</field>
         <field name="standard_price">347</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 347,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 347, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 40-647 - BF R2 1" ST M42X2 DIN -->
     <record id="product_40_647" model="product.product">
         <field name="name">40-647</field>
         <field name="default_code">40-647</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_fittings"/>
         <field name="list_price">0</field>
         <field name="standard_price">266</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 266,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 266, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 40-649 - BF R2 1" 90 M42X2 DIN -->
     <record id="product_40_649" model="product.product">
         <field name="name">40-649</field>
         <field name="default_code">40-649</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_fittings"/>
         <field name="list_price">0</field>
         <field name="standard_price">385</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 385,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 385, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 10-507 - BF R2 1/4" 90 BSP -->
     <record id="product_10_507" model="product.product">
         <field name="name">10-507</field>
         <field name="default_code">10-507</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_fittings"/>
         <field name="list_price">0</field>
         <field name="standard_price">44</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 44,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 44, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 10-505 - BF R2 1/4" ST BSP -->
     <record id="product_10_505" model="product.product">
         <field name="name">10-505</field>
         <field name="default_code">10-505</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_fittings"/>
         <field name="list_price">0</field>
         <field name="standard_price">60</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 60,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 60, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 50-554 - BF 4SH 1.1/4" ST 54OD -->
     <record id="product_50_554" model="product.product">
         <field name="name">50-554</field>
         <field name="default_code">50-554</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_fittings"/>
         <field name="list_price">0</field>
         <field name="standard_price">452</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 452,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 452, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 50-565 - BF 4SH 1.1/4" 90 54OD -->
     <record id="product_50_565" model="product.product">
         <field name="name">50-565</field>
         <field name="default_code">50-565</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_fittings"/>
         <field name="list_price">0</field>
         <field name="standard_price">719</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 719,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 719, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 50-560 - BF 4SH 1" ST 47OD -->
     <record id="product_50_560" model="product.product">
         <field name="name">50-560</field>
         <field name="default_code">50-560</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_fittings"/>
         <field name="list_price">0</field>
         <field name="standard_price">323</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 323,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 323, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 30-633 - BF 4SH 1" 90 1.7/16 ORFS -->
     <record id="product_30_633" model="product.product">
         <field name="name">30-633</field>
         <field name="default_code">30-633</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_fittings"/>
         <field name="list_price">0</field>
         <field name="standard_price">408</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 408,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 408, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 30-632 - BF 4SH 1" 45 1.7/16 ORFS -->
     <record id="product_30_632" model="product.product">
         <field name="name">30-632</field>
         <field name="default_code">30-632</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_fittings"/>
         <field name="list_price">0</field>
         <field name="standard_price">408</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 408,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 408, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 50-694 - BF 4SH 1" 90 54OD DH120 -->
     <record id="product_50_694" model="product.product">
         <field name="name">50-694</field>
         <field name="default_code">50-694</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_fittings"/>
         <field name="list_price">0</field>
         <field name="standard_price">719</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 719,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 719, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 50-563 - BF 4SH 1" 90 47OD DH100 -->
     <record id="product_50_563" model="product.product">
         <field name="name">50-563</field>
         <field name="default_code">50-563</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_fittings"/>
         <field name="list_price">0</field>
         <field name="standard_price">651</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 651,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 651, 'min_qty': 0})]"/>
     </record>
 
 
     <!-- =========================================================== -->
-    <!-- RAW MATERIALS - SPRINGS (3 Products)                        -->
+    <!-- SPRINGS (3) - NO 'type' FIELD                               -->
     <!-- =========================================================== -->
 
-    <!-- 90-530 - SG 1" 1650MM ID39 -->
     <record id="product_90_530" model="product.product">
         <field name="name">90-530</field>
         <field name="default_code">90-530</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_springs"/>
         <field name="list_price">0</field>
         <field name="standard_price">380</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 380,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 380, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 90-506 - SG 1" 1330MM ID39 -->
     <record id="product_90_506" model="product.product">
         <field name="name">90-506</field>
         <field name="default_code">90-506</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_springs"/>
         <field name="list_price">0</field>
         <field name="standard_price">380</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 380,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 380, 'min_qty': 0})]"/>
     </record>
 
-    <!-- 90-512 - SG 1.1/4" 1650MM ID45.5 -->
     <record id="product_90_512" model="product.product">
         <field name="name">90-512</field>
         <field name="default_code">90-512</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_springs"/>
         <field name="list_price">0</field>
         <field name="standard_price">420</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
-        <field name="seller_ids" eval="[(0, 0, {
-            'name': ref('vendor_gates_hss'),
-            'price': 420,
-            'min_qty': 0,
-        })]"/>
+        <field name="seller_ids" eval="[(0, 0, {'partner_id': ref('vendor_gates_hss'), 'price': 420, 'min_qty': 0})]"/>
     </record>
 
 
     <!-- =========================================================== -->
-    <!-- SEMI FINISHED - EC210 INDIVIDUAL HOSES (9 Products)         -->
+    <!-- EC210 HOSES (9) - NO 'type' FIELD                           -->
     <!-- =========================================================== -->
 
-    <!-- 07-011 - HOSE 1" 4SH ST M42X2 XST M42X2 1700MM Spring -->
     <record id="product_07_011" model="product.product">
         <field name="name">07-011</field>
         <field name="default_code">07-011</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_ec210_hoses"/>
         <field name="list_price">3444</field>
         <field name="standard_price">2296</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
     </record>
 
-    <!-- 07-380 - HOSE 1" R2 ST M42X2 XST M42X2 1700MM Spring -->
     <record id="product_07_380" model="product.product">
         <field name="name">07-380</field>
         <field name="default_code">07-380</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_ec210_hoses"/>
         <field name="list_price">2564</field>
         <field name="standard_price">1709</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
     </record>
 
-    <!-- 07-280 - HOSE 1" 4SH ST M42X2 ST M42X2 1400MM Spring -->
     <record id="product_07_280" model="product.product">
         <field name="name">07-280</field>
         <field name="default_code">07-280</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_ec210_hoses"/>
         <field name="list_price">3121</field>
         <field name="standard_price">2081</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
     </record>
 
-    <!-- 07-133 - HOSE 1" R2 ST M42X2 ST M42X2 1400MM Spring -->
     <record id="product_07_133" model="product.product">
         <field name="name">07-133</field>
         <field name="default_code">07-133</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_ec210_hoses"/>
         <field name="list_price">2353</field>
         <field name="standard_price">1569</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
     </record>
 
-    <!-- 07-1596 - HOSE 1" R2 90 M42X2 ST M42X2 750MM -->
     <record id="product_07_1596" model="product.product">
         <field name="name">07-1596</field>
         <field name="default_code">07-1596</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_ec210_hoses"/>
         <field name="list_price">1610</field>
         <field name="standard_price">1073</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
     </record>
 
-    <!-- 07-216 - HOSE 1/4" R1 90XST 1/4" BSP 1000MM -->
     <record id="product_07_216" model="product.product">
         <field name="name">07-216</field>
         <field name="default_code">07-216</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_ec210_hoses"/>
         <field name="list_price">401</field>
         <field name="standard_price">221</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
     </record>
 
-    <!-- 07-205 - HOSE 1/4" R1 90XST 1/4" BSP 2000MM -->
     <record id="product_07_205" model="product.product">
         <field name="name">07-205</field>
         <field name="default_code">07-205</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_ec210_hoses"/>
         <field name="list_price">548</field>
         <field name="standard_price">338</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
     </record>
 
-    <!-- 07-814 - HOSE 1/4" R2 90 1/4" ST 1/4" 3000MM -->
     <record id="product_07_814" model="product.product">
         <field name="name">07-814</field>
         <field name="default_code">07-814</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_ec210_hoses"/>
         <field name="list_price">777</field>
         <field name="standard_price">518</field>
         <field name="uom_id" ref="uom.product_uom_unit"/>
     </record>
 
-    <!-- 07-999 - HOSE 1" 4SH 90 M42X2 ST M42X2 700MM -->
     <record id="product_07_999" model="product.product">
         <field name="name">07-999</field>
         <field name="default_code">07-999</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_ec210_hoses"/>
         <field name="list_price">1300</field>
         <field name="standard_price">1000</field>
@@ -517,14 +361,12 @@
 
 
     <!-- =========================================================== -->
-    <!-- FINISHED GOODS - EC210 KIT (1 Product)                      -->
+    <!-- EC210 KIT (1) - NO 'type' FIELD                             -->
     <!-- =========================================================== -->
 
-    <!-- 07-923A - VOLVO EC210 RBC Kit -->
     <record id="product_07_923A" model="product.product">
         <field name="name">07-923A</field>
         <field name="default_code">07-923A</field>
-        <field name="type">product</field>
         <field name="categ_id" ref="cat_kits"/>
         <field name="list_price">15219</field>
         <field name="standard_price">0</field>
