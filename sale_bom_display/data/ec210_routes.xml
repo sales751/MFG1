@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- =========================================================== -->
+    <!-- KIT PRODUCT (07-923A) - Manufacture + MTO Routes            -->
+    <!-- =========================================================== -->
+
+    <record id="product_07_923A" model="product.product">
+        <field name="route_ids" eval="[
+            (4, ref('mrp.route_warehouse_0_manufacture')),
+            (4, ref('stock.route_warehouse_0_mto'))
+        ]"/>
+    </record>
+
+
+    <!-- =========================================================== -->
+    <!-- HOSES (8 Products) - Sirf Manufacture Route                 -->
+    <!-- =========================================================== -->
+
+    <record id="product_07_011" model="product.product">
+        <field name="route_ids" eval="[(4, ref('mrp.route_warehouse_0_manufacture'))]"/>
+    </record>
+
+    <record id="product_07_380" model="product.product">
+        <field name="route_ids" eval="[(4, ref('mrp.route_warehouse_0_manufacture'))]"/>
+    </record>
+
+    <record id="product_07_280" model="product.product">
+        <field name="route_ids" eval="[(4, ref('mrp.route_warehouse_0_manufacture'))]"/>
+    </record>
+
+    <record id="product_07_133" model="product.product">
+        <field name="route_ids" eval="[(4, ref('mrp.route_warehouse_0_manufacture'))]"/>
+    </record>
+
+    <record id="product_07_1596" model="product.product">
+        <field name="route_ids" eval="[(4, ref('mrp.route_warehouse_0_manufacture'))]"/>
+    </record>
+
+    <record id="product_07_216" model="product.product">
+        <field name="route_ids" eval="[(4, ref('mrp.route_warehouse_0_manufacture'))]"/>
+    </record>
+
+    <record id="product_07_205" model="product.product">
+        <field name="route_ids" eval="[(4, ref('mrp.route_warehouse_0_manufacture'))]"/>
+    </record>
+
+    <record id="product_07_814" model="product.product">
+        <field name="route_ids" eval="[(4, ref('mrp.route_warehouse_0_manufacture'))]"/>
+    </record>
+
+</odoo>
